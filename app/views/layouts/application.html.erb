@@ -1,16 +1,164 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Bootstrap</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<body>
+  <div class="container p-5 my-5 bg-primary text-white">
+  <h1>My First Bootstrap Page</h1>
+  <p>This part is inside a .container class.</p>
+  <p>The .container class provides a responsive fixed width container.</p>
+  <p>Resize the browser window to see that the container width will change at different breakpoints.</p>
+</div>
+</body>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+  <div class="container-fluid">
+  <h1>My First Bootstrap Page</h1>
+  <p>This part is inside a .container-fluid class.</p>
+  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>     
+</div>
+</body>
+
+<body>
+<div class="container pt-3">
+<h1>Head</h1>
+<p>text</p>
+<div class="container-lg mt-3 border">.container-lg</div>
+</body>
+
+<body>
+<div class="container-fluid mt-2">
+  <h1>Three equal width columns</h1>
+  <p>Note: Try to add a new div with class="col" inside the row class - this will create four equal-width columns.</p>
+  <div class="row">
+    <div class="col-sm-4 p-3 bg-primary text-white">.col</div>
+    <div class="col-sm-4 p-3 bg-dark text-white">.col</div>
+    <div class="col-sm-2 p-3 bg-danger text-white">.col</div>
+    <div class="col-sm-2 p-3 bg-warning text-white">.col</div>
+  </div>
+</div>
+</body>
+
+<body>
+
+<div class="container mt-3">
+  <h1>Blockquotes</h1>
+  <p>The blockquote element is used to present content from another source:</p>
+  <blockquote class="blockquote">
+    <p>*<kbd>I love Andriy</kbd>*</p>
+    <footer class="blockquote-footer">made in Tanya</footer>
+  </blockquote>
+</div>
+
+<div class="container mt-3">
+  <h2>Typography</h2>
+  <p class="text-left">Left-aligned text.</p>
+  <p class="text-end">Right-aligned text.</p>      
+  <p class="text-center">Center-aligned text.</p>
+  <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+</div>
+
+<hr>
+  
+
+<div class="container mt-3">
+  <h2>Contextual Colors</h2>
+  <p>Use the contextual classes to provide "meaning through colors":</p>
+  <p class="text-muted">This text is muted.</p>
+  <p class="text-primary">This text is important.</p>
+  <p class="text-success">This text indicates success.</p>
+  <p class="text-info">This text represents some information.</p>
+  <p class="text-warning">This text represents a warning.</p>
+  <p class="text-danger">This text represents danger.</p>
+  <p class="text-secondary">Secondary text.</p>
+  <p class="text-dark">This text is dark grey.</p>
+  <p class="text-body">Default body color (often black).</p>
+  <p class="text-light">This text is light grey (on white background).</p>
+  <p class="text-white">This text is white (on white background).</p>
+</div>
+
+<hr>
+
+<div class="container mt-3">
+  <h2>Contextual Backgrounds</h2>
+  <p>Use the contextual background classes to provide "meaning through colors".</p>
+  <p>Note that you can also add a .text-* class if you want a different text color:</p>
+  <p class="bg-primary text-muted">This text is important.</p>
+  <p class="bg-success text-white">This text indicates success.</p>
+  <p class="bg-info text-white">This text represents some information.</p>
+  <p class="bg-warning text-danger">This text represents a warning.</p>
+  <p class="bg-danger text-dark">This text represents danger.</p>
+  <p class="bg-secondary text-white">Secondary background color.</p>
+  <p class="bg-dark text-white">Dark grey background color.</p>
+  <p class="bg-light text-dark">Light grey background color.</p>
+</div>
+
+<hr>
+
+<div class="container mt-3">
+  <h2>Table Head Colors</h2>
+  <p>You can use any of the contextual classes to only add a color to the table header:</p>
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table">
+    <thead class="table-success">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+
 </html>
+
